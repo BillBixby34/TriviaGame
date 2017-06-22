@@ -1,25 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pok&eactue;-spelling</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pokémon or Word?</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-</head>
-<body>
+		<script rel="stylesheet" type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="assets/javascript/app.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- Countdown Timer -->
+		<header>
+			<div id="status"></div>
+			<script>countDown(60, "status");</script>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+				<!-- Multiple Choice Questions -->
+				<form id="quiz" name="quiz">
+					<p>Drowzee<br>
+						<input type="radio" id="mc" name="question1" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question1" value="word">A word<br>
+						<input type="radio" id="mc" name="question1" value="both">both!<br>
+					</p>		
+					
+					<p>Muk<br>
+						<input type="radio" id="mc" name="question2" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question2" value="word">A word<br>
+						<input type="radio" id="mc" name="question2" value="both">both!<br>
+					</p>		
 
-	<div class="container" id="main">
-		<h2 class="name" id="name"></h2>
-		<h2 class="result" id="result"></h2>
-		<div id="option"><!--will change into buttons-->
-			<div class="choice" id="pokémon">pokémon</div>
-			<div class="choice" id="word">word</div>
+					<p>Ditto<br>
+						<input type="radio" id="mc" name="question3" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question3" value="word">A word<br>
+						<input type="radio" id="mc" name="question3" value="both">both!<br>
+					</p>		
+					
+					<p>Onix<br>
+						<input type="radio" id="mc" name="question4" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question4" value="word">A word<br>
+						<input type="radio" id="mc" name="question4" value="both">both!<br>
+					</p>		
+					
+					<p>Skitty<br>
+						<input type="radio" id="mc" name="question5" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question5" value="word">A word<br>
+						<input type="radio" id="mc" name="question5" value="both">both!<br>
+					</p>		
+					
+					<p>Beautify<br>
+						<input type="radio" id="mc" name="question6" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question6" value="word">A word<br>
+						<input type="radio" id="mc" name="question6" value="both">both!<br>
+					</p>		
+					
+					<p>Horsey<br>
+						<input type="radio" id="mc" name="question7" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question7" value="word">A word<br>
+						<input type="radio" id="mc" name="question7" value="both">both!<br>
+					</p>
+
+					<p>Wheezing<br>
+						<input type="radio" id="mc" name="question8" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question8" value="word">A word<br>
+						<input type="radio" id="mc" name="question8" value="both">both!<br>
+					</p>				
+					
+					<p>Krookodile<br>
+						<input type="radio" id="mc" name="question9" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question9" value="word">A word<br>
+						<input type="radio" id="mc" name="question9" value="both">both!<br>
+					</p>		
+					
+					<p>Fledgling<br>
+						<input type="radio" id="mc" name="question10" value="pokémon">a pokémon<br>
+						<input type="radio" id="mc" name="question10" value="word">A word<br>
+						<input type="radio" id="mc" name="question10" value="both">both!<br>
+					</p>		
+					
+					<!-- Finish button -->
+						<input id="button" type="button" value="I'm finished!" onclick="check();">
+						<div id="after_submit">
+						<p id="number_correct"></p>
+						<p id="number_incorrect"></p>
+					<!-- reset button -->
+					<button id="restart" onclick = "reset">Click to try again</button>
+				</form>
+				</div>
+			</div>
+				<div class="col-md-2"></div>
+			</div>
 		</div>
-		<div class="generate" id="generate">try again?</div>
-	</div><!--closes id="main"-->
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+	</div>
 </body>
+	<!-- Links -->
+	<footer>
+		<h5> &#0153; 	
+			<a href="https://www.nintendo.com/"> Nintendo</a><br>
+			Click link for more info about 
+			<a href="http://www.pokemon.com/us/">Pokémon!</a>
+		</h5>
+	</footer>
 </html>

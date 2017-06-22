@@ -1,0 +1,53 @@
+header {
+	background: blue;
+	color: orange;
+	overflow: auto;
+	position: relative;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 2em;
+}
+
+body {
+	margin-top:40px;
+	background: url(../images/sun_moon.jpeg);
+	display: block;
+}
+
+p {
+	background: pink;
+	opacity: .8;
+	color: blue;
+	padding:10px;
+}
+
+#button {
+	background: red;
+	padding: 10px;
+	color: white;
+}
+
+#after_submit{
+	visibility: hidden;
+}
+
+#number_correct, #number_incorrect {
+	background: url(../images/pokeballs.jpg) fixed;
+	color: blue;
+	text-align: center;
+	opacity: .9
+}
+
+footer {
+	background: white;
+	color: red;
+	padding: 10px;
+	width: 100%;
+}
+
+#restart{
+	background: orange;
+	color: blue;
+	margin:20px;
+	float: right;
+}
